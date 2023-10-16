@@ -11,9 +11,10 @@ public class Persona {
 
     public String toString(){
         String str = "{";
-        str+= "\n\"nome\" : \""+this.nome+"\",";
-        str+= "\n\"annoNascita\" : "+this.annoNascita+",";
-        str+= "\n\"sesso\" : \""+this.sesso+"\",";
+        str += "\n\"nome\" : \""+this.nome+"\",";
+        str += "\n\"annoNascita\" : "+this.annoNascita+",";
+        str += "\n\"sesso\" : \""+this.sesso+"\"";
+        str += "\n}";
         return str;
     }
 }
