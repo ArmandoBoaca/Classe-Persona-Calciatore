@@ -35,11 +35,7 @@ public class Calciatore extends Persona{
 
     @Override
     public Object clone() {
-        Calciatore newCal = (Calciatore) super.clone();
-        newCal.ruolo = this.ruolo;
-        newCal.nMaglia = this.nMaglia;
-        newCal.nGoal = this.nGoal;
-        return newCal;
+        return new Calciatore(this);
     }
 
     public String toString(){
