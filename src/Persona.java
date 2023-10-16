@@ -9,6 +9,18 @@ public class Persona {
         this.sesso = sesso;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnnoNascita() {
+        return annoNascita;
+    }
+
+    public String getSesso() {
+        return sesso;
+    }
+
     public void setSesso(String newSesso){
         this.sesso = newSesso;
     }
