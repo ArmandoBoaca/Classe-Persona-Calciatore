@@ -10,6 +10,13 @@ public class Calciatore extends Persona{
         this.nGoal = nGoal;
     }
 
+    public Calciatore(Calciatore calciatore){
+        super(calciatore);
+        this.nGoal = calciatore.nGoal;
+        this.ruolo = calciatore.ruolo;
+        this.nMaglia = calciatore.nMaglia;
+    }
+
     public String getRuolo() {
         return ruolo;
     }
@@ -28,7 +35,7 @@ public class Calciatore extends Persona{
 
     @Override
     public Object clone() {
-        Calciatore newCal = (Persona) super.clone();
+        Calciatore newCal = (Calciatore) super.clone();
         newCal.ruolo = this.ruolo;
         newCal.nMaglia = this.nMaglia;
         newCal.nGoal = this.nGoal;
