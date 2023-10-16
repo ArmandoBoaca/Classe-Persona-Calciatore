@@ -22,6 +22,9 @@ public class Calciatore extends Persona{
         return nGoal;
     }
 
+    public void addGoal(int nGoal){
+        this.nGoal += nGoal;
+    }
 
     @Override
     public Object clone() {
