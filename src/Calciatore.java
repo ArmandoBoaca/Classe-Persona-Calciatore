@@ -22,6 +22,10 @@ public class Calciatore extends Persona{
         return nGoal;
     }
 
+
+
+
+
     public String toString(){
         String str = "{";
         str += super.toStringInner();
@@ -29,6 +33,15 @@ public class Calciatore extends Persona{
         str += "\n\"nMaglia\":"+this.nMaglia+",";
         str += "\n\"nGoal\":"+this.nGoal;
         str += "\n}";
+        return str;
+    }
+
+    public String toStringInner(){
+        String str = "";
+        str += super.toStringInner();
+        str += "\n\"ruolo\":\""+this.ruolo+"\",";
+        str += "\n\"nMaglia\":"+this.nMaglia+",";
+        str += "\n\"nGoal\":"+this.nGoal+", ";
         return str;
     }
 }
