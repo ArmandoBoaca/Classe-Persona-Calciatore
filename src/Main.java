@@ -10,7 +10,12 @@ public class Main {
         System.out.println(p2.toString());
 
         Calciatore c1 = new Calciatore("Giacomo", 2000, "Maschio", "Centrocampista", 17, 32);
-
         System.out.println(c1.toString());
+        c1.addGoal(5);
+        Calciatore c2 = (Calciatore)c1.clone();
+        System.out.println(c2.toString());
+
+
+
     }
 }
