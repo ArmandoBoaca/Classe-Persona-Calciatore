@@ -4,7 +4,7 @@ public class Main {
         System.out.println(p1.toString());
 
         Persona p2 = (Persona) p1.clone();
-        p1.setSesso("Pansessuale");
+        p2.setSesso("Pansessuale");
         System.out.println(p2.toString());
 
 
