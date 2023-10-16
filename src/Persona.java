@@ -9,6 +9,9 @@ public class Persona {
         this.sesso = sesso;
     }
 
+    public void setSesso(String newSesso){
+        this.sesso = newSesso;
+    }
     public String toString(){
         String str = "{";
         str += "\n\"nome\" : \""+this.nome+"\",";
