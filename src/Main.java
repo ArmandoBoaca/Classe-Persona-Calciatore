@@ -1,3 +1,5 @@
+import java.util.concurrent.Callable;
+
 public class Main {
     public static void main(String[] args){
         Persona p1 = new Persona("Gianni", 2000, "Maschio");
@@ -7,6 +9,8 @@ public class Main {
         p2.setSesso("Pansessuale");
         System.out.println(p2.toString());
 
+        Calciatore c1 = new Calciatore("Giacomo", 2000, "Maschio", "Centrocampista", 17, 32);
 
+        System.out.println(c1.toString());
     }
 }
