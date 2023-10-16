@@ -24,6 +24,10 @@ public class Persona {
     public void setSesso(String newSesso){
         this.sesso = newSesso;
     }
+
+    public Object clone(){
+        return new Persona(this.nome, this.annoNascita,this.sesso);
+    }
     public String toString(){
         String str = "{";
         str += "\n\"nome\" : \""+this.nome+"\",";
