@@ -36,4 +36,12 @@ public class Persona {
         str += "\n}";
         return str;
     }
+
+    public String toStringInner(){
+        String str = "";
+        str += "\n\"nome\" : \""+this.nome+"\",";
+        str += "\n\"annoNascita\" : "+this.annoNascita+",";
+        str += "\n\"sesso\" : \""+this.sesso+"\", ";
+        return str;
+    }
 }
